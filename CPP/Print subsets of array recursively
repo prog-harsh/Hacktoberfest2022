@@ -1,0 +1,60 @@
+/* Given an integer array (of length n), find and print all the subsets of input array.
+
+
+Sample Input:
+3
+15 20 12
+Sample Output:
+[] 
+12 
+20 
+20 12 
+15 
+15 12 
+15 20 
+15 20 12 */
+
+#include<iostream>
+using namespace std;
+void printsubsethelper(int input[],int n, int output[], int m){
+    if(n==0)
+    {
+        for (int i = 0;i<m;i++)
+        {
+            cout<<output[i]<<" ";
+        }
+        cout<<endl;
+        
+        return;
+    }
+    
+     
+    int newoutput[m+1];
+    for(int i = 0;i<m;i++)
+    {
+        newoutput[i] = output[i];
+    }
+    newoutput[m] =input[0];
+    
+    printsubsethelper(input+1,n-1,output,m);    
+    printsubsethelper(input+1,n-1,newoutput,m+1);
+    
+    return;
+    
+}
+void printSubsetsOfArray(int input[], int size) {
+ 
+    int output[1000]; 
+    int m = 0;
+    return printsubsethelper(input,size,output ,0);
+
+}
+
+
+int main() {
+  int input[1000],length;
+  cin >> length;
+  for(int i=0; i < length; i++)
+  	cin >> input[i];
+  printSubsetsOfArray(input, length);
+}
