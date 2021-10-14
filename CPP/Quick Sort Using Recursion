@@ -1,0 +1,68 @@
+/*Sort an array A using Quick Sort.*/
+
+
+
+int partion(int input[],int si,int ei)
+{
+    int count=0;
+    int x=input[si];
+    
+    for(int i=si+1 ; i<=ei ; i++)
+    {
+        if(input[i]<=x)
+            count++;
+    }    
+   
+       count=si+count;                                      //placing element of partion index at right index
+       int temp=input[count];
+           input[count]=input[si];
+           input[si]=temp;
+    
+    int i=si;
+    int j=ei;
+    
+    while(i<count && j>=count)                               //swaping elements such that element less than element of partion index is on left n others on right.
+    {
+        if(input[i]<=input[count])
+           i++;  
+        
+        else if (input[j]>input[count])
+                j--;
+        else
+                {
+                    int temp=input[i];
+                    input[i]=input[j];
+                    input[j]=temp;
+                      i++;
+                      j--;
+                }
+         
+      }
+    
+      return count;
+    
+    
+}
+
+
+
+void quickSort(int input[],int si,int ei)
+{
+    if(si>ei)
+    return;
+    
+    int pi=partion(input,si,ei);                       // recursive call to get the index of partion point
+    
+    quickSort(input ,si,pi-1);                         //recusion call on partion-1 part of array
+    quickSort(input,pi+1,ei);                          //recursion call on partion+1 part of array
+      
+}
+
+
+
+void quickSort(int input[], int size) 
+{
+ 
+    quickSort( input,0,size-1);
+
+}
