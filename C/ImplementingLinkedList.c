@@ -1,3 +1,10 @@
+/*
+        Author : Devesh Chandra
+        Date : 24/10/2021
+        Description :  This Program is to implement Linked lists.
+ */
+
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
