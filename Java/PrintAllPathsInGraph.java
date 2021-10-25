@@ -1,5 +1,5 @@
 // Problem Statement -
-// Giiven a graph, a source vertex and a destination vertex. find and print all paths between source and destination. 
+// Given a graph, a source vertex and a destination vertex. find and print all paths between source and destination. 
 // Print them in lexicographical order.
 
 // Sample Input :
