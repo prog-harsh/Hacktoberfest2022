@@ -69,12 +69,13 @@ public class Main {
       
       String psf=src+"";
       boolean[] visited=new boolean[vtces];
-      printPaths(graph,src,dest,visited,psf);
+      printPaths(graph,src,dest,visited,psf); 
    }
 
 //    recursive function to print all paths in a graph
    public static void printPaths(ArrayList<Edge>[] graph,int src,int dest,boolean[] visited,String psf){
        
+       // Base Case , when src and dest vertex are equal , print path so far(psf) and return
        if(src==dest){
            System.out.println(psf);
            return;
