@@ -1,11 +1,11 @@
-![image](https://user-images.githubusercontent.com/64991656/135403993-8436cfd2-5314-4c03-8509-d33e51c565b2.png)
+![image](https://user-images.githubusercontent.com/62786689/193422113-cea8df62-7528-47de-afd6-cb643b830431.png)
 
-<h1 align="center"> Hacktoberfest 2021 </h1>
+<h1 align="center"> Hacktoberfest 2022 </h1>
 
 ***
 <h3 align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
-        Link To HacktoberFest 2021
+        Link To HacktoberFest 2022
     </a>
 </h3>
 
