@@ -1,3 +1,5 @@
+# EXCLUDED FROM HACKTOBERFEST
+
 ![image](https://user-images.githubusercontent.com/62786689/193422113-cea8df62-7528-47de-afd6-cb643b830431.png)
 
 <h1 align="center"> Hacktoberfest 2022 </h1>
